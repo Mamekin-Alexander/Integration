@@ -97,6 +97,8 @@ void trapeze_vs_rectangle()
 	std::cout << "     Trapeze:     " << std::setprecision(14) << trapeze(number_of_splits, (default_type)5.0);
 	std::cout << "     Difference  " << std::setprecision(14) << abs(trapeze(number_of_splits, (default_type)5.0) - correct) << '\n';
 	std::cout << "     Real value:  " << std::setprecision(14) << correct << '\n';
+	std::cout << "It's so, because first derivative takes values from -0.78 to 0.78, but the second from -2 to 0.89. Also first derivative is 0 at x=0" << '\n';
+	std::cout << "So in rectangle we have better aproximation, that is why the result is more accurate" << '\n';
 	std::cout << "--------------------------------------------------------------------" << '\n';
 	return;
 }
